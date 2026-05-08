@@ -1,7 +1,6 @@
 # LLM Quality Evaluator
 
-A lightweight Python framework for evaluating LLM output quality across multiple dimensions — built for AI-focused QA/SDET workflows.
-
+A lightweight Python framework for evaluating LLM output quality across multiple dimensions 
 ## What It Tests
 
 | Dimension | What It Checks |
@@ -82,4 +81,4 @@ Every push triggers the eval suite via GitHub Actions. See `.github/workflows/ev
 
 ---
 
-Built as a portfolio project demonstrating AI/LLM evaluation skills for SDET roles.
+
