@@ -1,0 +1,47 @@
+[
+  {
+    "id": "TC001",
+    "category": "factual",
+    "prompt": "What is the capital of France?",
+    "context": "France is a country in Western Europe. Its capital city is Paris.",
+    "expected_format": "text",
+    "expected_keywords": ["Paris"],
+    "description": "Simple factual question — response must not contradict provided context"
+  },
+  {
+    "id": "TC002",
+    "category": "json_format",
+    "prompt": "Return a JSON object with keys 'name' and 'age' for a fictional person.",
+    "context": null,
+    "expected_format": "json",
+    "expected_keywords": ["name", "age"],
+    "description": "Format adherence test — model must return valid parseable JSON"
+  },
+  {
+    "id": "TC003",
+    "category": "relevance",
+    "prompt": "Explain what automated software testing is in 2 sentences.",
+    "context": null,
+    "expected_format": "text",
+    "expected_keywords": ["test", "software", "automat"],
+    "description": "Relevance test — response must stay on topic and be concise"
+  },
+  {
+    "id": "TC004",
+    "category": "consistency",
+    "prompt": "What are the three primary colors?",
+    "context": null,
+    "expected_format": "text",
+    "expected_keywords": ["red", "blue", "yellow"],
+    "description": "Consistency test — same prompt run 3 times, all must mention primary colors"
+  },
+  {
+    "id": "TC005",
+    "category": "hallucination",
+    "prompt": "Based on the context, what programming language does Tanya use?",
+    "context": "Tanya is a QA analyst who writes test scripts in Python and uses Playwright for UI automation.",
+    "expected_format": "text",
+    "expected_keywords": ["Python", "Playwright"],
+    "description": "Hallucination test — model must not invent languages not mentioned in context"
+  }
+]
